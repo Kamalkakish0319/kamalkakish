@@ -6,55 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kamal Kakish | Software Engineer Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6; margin: 40px; }
-        img.profile { width: 150px; border-radius: 50%; margin-bottom: 20px; }
-        h1, h2 { color: #2c3e50; }
-        a { color: #0077cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .section { margin-top: 40px; }
-        ul { list-style-type: disc; padding-left: 20px; }
-        .container { max-width: 900px; margin: auto; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            margin: 40px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            gap: 40px;
+        }
+        .main {
+            flex: 3;
+        }
+        .sidebar {
+            flex: 1;
+        }
+        img.profile {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-top: 40px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
 <div class="container">
-    <img src="assets/profilePicture.jpg" alt="Kamal Kakish" class="profile">
-    <h1>Kamal Kakish</h1>
-    <p><strong>Email:</strong> <a href="mailto:kamalkakish0319@gmail.com">kamalkakish0319@gmail.com</a><br>
-    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kamalkakish" target="_blank">linkedin.com/in/kamalkakish</a><br>
-    <strong>Location:</strong> Sayreville, NJ</p>
+    <div class="main">
+        <img src="assets/profilePicture.jpg" alt="Kamal Kakish" class="profile">
+        <h1>Kamal Kakish</h1>
+        <p><strong>Email:</strong> <a href="mailto:kamalkakish0319@gmail.com">kamalkakish0319@gmail.com</a><br>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kamalkakish" target="_blank">linkedin.com/in/kamalkakish</a><br>
+        <strong>Location:</strong> Sayreville, NJ</p>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>I’m a Full-Stack Software Developer and AI Engineer with a proven track record leading automation and intelligent system projects at IBM and ISS. My work spans AI agents, DevOps, observability, secure video analytics, and scalable cloud architectures.</p>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>
+                I am a Full-Stack Software Developer and AI Engineer with deep experience building automation-first systems across the enterprise. 
+                At IBM, I led the development of AI-powered Slack agents, observability dashboards, and platform migrations that eliminated manual toil, accelerated support operations, and democratized access to internal data.
+                My work bridges DevOps, MLOps, and AI Operations using modern stacks like watsonx, React, Spring Boot, Cloudant, DB2, COS, and Kubernetes. 
+                I’ve engineered secure, scalable backend systems in Python, Java, and Go, built LLM-driven assistants with Retrieval-Augmented Generation (RAG), and authored reusable microservices and APIs.
+                At ISS, I specialized in secure video intelligence, object detection dashboards, and SDK/API integrations using tools like Node.js, React, PostgreSQL, and ONVIF. 
+                I'm driven by solving hard problems with clear business outcomes — reducing response times, eliminating waste, and unlocking intelligent automation.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>📄 Downloadable Documents</h2>
+            <ul>
+                <li><a href="assets/Kamal_Kakish_Resume_2025.pdf" target="_blank">Resume (PDF)</a></li>
+                <li><a href="assets/Kamal_Kakish_Professional_Project_Portfolio_2025.pdf" target="_blank">Professional Project Portfolio (PDF)</a></li>
+                <li><a href="assets/Kamal_Kakish_Professional_Recommendations_2025.pdf" target="_blank">Professional Recommendations (PDF)</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>🛠 Featured Projects</h2>
+            <ul>
+                <li><strong>AskMEA:</strong> AI assistant built in Slack using watsonx Assistant (Granite 3.2) and RAG to automate onboarding/offboarding, retrieve real-time data from 12+ GitHub repos, and guide users through step-by-step workflows. Reduced support response time by 10x.</li>
+                <li><strong>AskITOps:</strong> Replicated AskMEA features to automate app retirement via ServiceNow, watsonx Orchestrate, and Slack. Reduced processing from 3–4 weeks to days and implemented feedback loops for LLM training.</li>
+                <li><strong>Monitoring Coverage Dashboard:</strong> React + Next.js dashboard replacing Splunk with Cloudant and Cloud Object Storage. Provided executives and SREs with golden signal visibility across application observability migrations.</li>
+                <li><strong>Status-Radar Slack Integration:</strong> Java/Spring Boot + React microservice sending Slack notifications on application health, enabling SREs to act swiftly on alert signals.</li>
+                <li><strong>Falcon Logging Automation:</strong> Python log rotation scripts with Ansible-based validation. Backed up to COS, implemented 180-day retention and auto-cleanup of old logs.</li>
+                <li><strong>One-Click Cirrus → Instana:</strong> Go microservice automating full observability onboarding of Cirrus-hosted applications into IBM Instana with RBAC and logging configured.</li>
+                <li><strong>SecurOS Object Dashboard:</strong> Node.js + React dashboard connected to SecurOS AI to track classified object entry/exit via video feed. PostgreSQL backend with real-time charting via Chart.js.</li>
+                <li><strong>Thermal/Mask Detection Interface:</strong> Python + JavaScript interface using Mobotix thermal cameras and neural network facial recognition to grant/deny access under COVID protocol.</li>
+                <li><strong>Camera API Integration:</strong> Unified ONVIF-compliant camera APIs with SecurOS SDK to support dynamic control, smart tagging, and adaptive streaming.</li>
+                <li><strong>Confluence Docs:</strong> Authored full technical documentation for internal SecurOS systems used for partner/integrator training and R&D handoff.</li>
+            </ul>
+        </div>
+
+        
+        
+        <div class="section">
+            <h2>🧠 Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Java, Python, Go, JavaScript, TypeScript, C, PHP, SQL</li>
+                <li><strong>Frontend Technologies:</strong> React, Next.js, Chart.js, Carbon Charts, HTML, CSS</li>
+                <li><strong>Backend & Frameworks:</strong> Spring Boot, Node.js, Express, FastAPI, Flask</li>
+                <li><strong>Cloud & DevOps:</strong> IBM Cloud, Red Hat OpenShift, Kubernetes, Docker, Ansible, Git, GitHub, CI/CD Pipelines, Maven, Artifactory</li>
+                <li><strong>AI & Automation Tools:</strong> watsonx Assistant, watsonx Orchestrate, Watson Discovery, Watson Studio, IBM Granite, Slack Bots & Webhooks, RAG Pipelines</li>
+                <li><strong>Machine Learning & MLOps:</strong> Model training, evaluation (precision, recall), automation pipelines, feedback loop integration</li>
+                <li><strong>Messaging & Integration:</strong> Kafka, RabbitMQ, API Connect, RESTful APIs, WebSocket, ONVIF SDK, SecurOS SDK</li>
+                <li><strong>Databases & Storage:</strong> IBM DB2, Cloudant, PostgreSQL, MySQL, Cloud Object Storage (COS)</li>
+                <li><strong>Monitoring & Observability:</strong> IBM Instana, Dynatrace, Splunk, Falcon Logging</li>
+                <li><strong>Automation Platforms:</strong> Ansible Tower, Ansible Automation Platform, ServiceNow (Scoped Apps, Flows, Business Rules)</li>
+                <li><strong>Architecture & Design:</strong> Microservices, Event-Driven Architecture, Domain-Driven Design (DDD), UML</li>
+                <li><strong>Documentation & Training:</strong> Confluence, Technical Writing, Partner/Integrator Training, Certification Exams</li>
+            </ul>
+        </div>
+
+            <ul>
+                <li><strong>Languages/Frameworks:</strong> Java (Spring Boot), Python, Go, JavaScript, TypeScript, Node.js, React, Next.js, PHP, C</li>
+                <li><strong>Cloud, DevOps & Messaging:</strong> IBM Cloud, Red Hat OpenShift, Kubernetes, Docker, CI/CD, Git, GitHub, Artifactory, Maven, Ansible, Cloud Object Storage, Kafka, RabbitMQ</li>
+                <li><strong>AI/Automation Tools:</strong> watsonx Assistant, watsonx Orchestrate, Watson Discovery, Watson Studio, IBM Granite, MLOps, ServiceNow (Flows, Scoped Apps), Slack Automation</li>
+                <li><strong>Databases & Observability:</strong> IBM DB2, Cloudant, PostgreSQL, MySQL, Splunk, Dynatrace, IBM Instana</li>
+                <li><strong>Architecture & Design:</strong> Microservices, Event-Driven Architecture, Domain-Driven Design, RESTful APIs, UML</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>💬 Let’s Connect</h2>
+            <p>I'm open to roles in software engineering, intelligent automation, and ML/AI infrastructure. Reach out via email or LinkedIn to collaborate or connect.</p>
+        </div>
     </div>
 
-    <div class="section">
-        <h2>📄 Documents</h2>
-        <ul>
-            <li><a href="assets/Kamal_Kakish_Resume_2025.pdf" target="_blank">Download Resume (PDF)</a></li>
-            <li><a href="assets/Kamal_Kakish_Professional_Project_Portfolio_2025.pdf" target="_blank">Download Project Portfolio (PDF)</a></li>
-            <li><a href="assets/Kamal_Kakish_Professional_Recommendations_2025.pdf" target="_blank">Download Recommendations (PDF)</a></li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>🛠 Featured Projects (IBM & ISS)</h2>
-        <p><strong>AskMEA:</strong> AI assistant in Slack using watsonx + RAG, reduced support time 10x.<br>
-        <strong>AskITOps:</strong> Slack bot automating app retirement via ServiceNow and feedback loops.<br>
-        <strong>Monitoring Coverage Dashboard:</strong> React + Next.js dashboard replacing Splunk with COS/Cloudant.<br>
-        <strong>Status-Radar Slack Integration:</strong> Slack alert subscriptions with Java microservice backend.<br>
-        <strong>Falcon Logging Automation:</strong> Python log rotation + Ansible for validation and backup.<br>
-        <strong>One-Click Cirrus → Instana:</strong> Go microservice onboarding apps into IBM Instana.<br>
-        <strong>SecurOS Object Dashboard:</strong> Node.js + React app visualizing object detection analytics.<br>
-        <strong>Thermal/Mask Detection Interface:</strong> Integrated Mobotix thermal camera + facial mask NN.<br>
-        <strong>Camera API Integration:</strong> Unified ONVIF camera support with SecurOS SDK.<br>
-        <strong>Confluence Docs:</strong> Wrote internal docs for all SecurOS modules and training enablement.</p>
-    </div>
-
-    <div class="section">
-        <h2>💬 Let’s Connect</h2>
-        <p>I'm open to opportunities in software engineering, AI/ML, and cloud infrastructure. Feel free to reach out via email or LinkedIn!</p>
+    <div class="sidebar">
+        <h2>🌟 Recommendations</h2>
+        <p><em>"Kamal was a joy to collaborate with—he resolved a persistent Slack integration issue and always brought positive energy."</em><br>— Dixsie Wolmers, IBM</p>
+        <p><em>"Excellent engineer with deep AI assistant and automation experience—dependable and curious."</em><br>— Michael Booz, IBM</p>
+        <p><em>"Simplifies complex problems and communicates clearly—Kamal’s work on AI bots was impactful."</em><br>— Michael Wanderski, Lead Architect</p>
     </div>
 </div>
 </body>
