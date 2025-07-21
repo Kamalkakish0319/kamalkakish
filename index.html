@@ -10,25 +10,26 @@
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
             color: #333;
-            line-height: 1.6;
-            margin: 40px;
+            margin: 0;
+            padding: 40px;
         }
         .container {
-            max-width: 1000px;
-            margin: auto;
             display: flex;
-            gap: 40px;
+            max-width: 1200px;
+            margin: auto;
         }
         .main {
             flex: 3;
+            padding-right: 40px;
         }
         .sidebar {
             flex: 1;
+            border-left: 2px solid #ccc;
+            padding-left: 40px;
         }
         img.profile {
             width: 150px;
             border-radius: 50%;
-            margin-bottom: 20px;
         }
         h1, h2 {
             color: #2c3e50;
@@ -47,6 +48,13 @@
             list-style-type: disc;
             padding-left: 20px;
         }
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid #ccc;
+            padding-left: 12px;
+            margin-left: 0;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -60,14 +68,7 @@
 
         <div class="section">
             <h2>About Me</h2>
-            <p>
-                I am a Full-Stack Software Developer and AI Engineer with deep experience building automation-first systems across the enterprise. 
-                At IBM, I led the development of AI-powered Slack agents, observability dashboards, and platform migrations that eliminated manual toil, accelerated support operations, and democratized access to internal data.
-                My work bridges DevOps, MLOps, and AI Operations using modern stacks like watsonx, React, Spring Boot, Cloudant, DB2, COS, and Kubernetes. 
-                I’ve engineered secure, scalable backend systems in Python, Java, and Go, built LLM-driven assistants with Retrieval-Augmented Generation (RAG), and authored reusable microservices and APIs.
-                At ISS, I specialized in secure video intelligence, object detection dashboards, and SDK/API integrations using tools like Node.js, React, PostgreSQL, and ONVIF. 
-                I'm driven by solving hard problems with clear business outcomes — reducing response times, eliminating waste, and unlocking intelligent automation.
-            </p>
+            <p>I am a Full-Stack Software Developer and AI Engineer with deep experience building automation-first systems across the enterprise. At IBM, I led the development of AI-powered Slack agents, observability dashboards, and platform migrations that eliminated manual toil, accelerated support operations, and democratized access to internal data. My work bridges DevOps, MLOps, and AI Operations using modern stacks like watsonx, React, Spring Boot, Cloudant, DB2, COS, and Kubernetes. At ISS, I specialized in secure video intelligence, object detection dashboards, and SDK/API integrations using tools like Node.js, React, PostgreSQL, and ONVIF.</p>
         </div>
 
         <div class="section">
@@ -80,47 +81,32 @@
         </div>
 
         <div class="section">
-            <h2>🛠 Featured Projects</h2>
-            <ul>
-                <li><strong>AskMEA:</strong> AI assistant built in Slack using watsonx Assistant (Granite 3.2) and RAG to automate onboarding/offboarding, retrieve real-time data from 12+ GitHub repos, and guide users through step-by-step workflows. Reduced support response time by 10x.</li>
-                <li><strong>AskITOps:</strong> Replicated AskMEA features to automate app retirement via ServiceNow, watsonx Orchestrate, and Slack. Reduced processing from 3–4 weeks to days and implemented feedback loops for LLM training.</li>
-                <li><strong>Monitoring Coverage Dashboard:</strong> React + Next.js dashboard replacing Splunk with Cloudant and Cloud Object Storage. Provided executives and SREs with golden signal visibility across application observability migrations.</li>
-                <li><strong>Status-Radar Slack Integration:</strong> Java/Spring Boot + React microservice sending Slack notifications on application health, enabling SREs to act swiftly on alert signals.</li>
-                <li><strong>Falcon Logging Automation:</strong> Python log rotation scripts with Ansible-based validation. Backed up to COS, implemented 180-day retention and auto-cleanup of old logs.</li>
-                <li><strong>One-Click Cirrus → Instana:</strong> Go microservice automating full observability onboarding of Cirrus-hosted applications into IBM Instana with RBAC and logging configured.</li>
-                <li><strong>SecurOS Object Dashboard:</strong> Node.js + React dashboard connected to SecurOS AI to track classified object entry/exit via video feed. PostgreSQL backend with real-time charting via Chart.js.</li>
-                <li><strong>Thermal/Mask Detection Interface:</strong> Python + JavaScript interface using Mobotix thermal cameras and neural network facial recognition to grant/deny access under COVID protocol.</li>
-                <li><strong>Camera API Integration:</strong> Unified ONVIF-compliant camera APIs with SecurOS SDK to support dynamic control, smart tagging, and adaptive streaming.</li>
-                <li><strong>Confluence Docs:</strong> Authored full technical documentation for internal SecurOS systems used for partner/integrator training and R&D handoff.</li>
-            </ul>
-        </div>
-
-        
-        
-        <div class="section">
             <h2>🧠 Skills</h2>
             <ul>
-                <li><strong>Programming Languages:</strong> Java, Python, Go, JavaScript, TypeScript, C, PHP, SQL</li>
-                <li><strong>Frontend Technologies:</strong> React, Next.js, Chart.js, Carbon Charts, HTML, CSS</li>
-                <li><strong>Backend & Frameworks:</strong> Spring Boot, Node.js, Express, FastAPI, Flask</li>
-                <li><strong>Cloud & DevOps:</strong> IBM Cloud, Red Hat OpenShift, Kubernetes, Docker, Ansible, Git, GitHub, CI/CD Pipelines, Maven, Artifactory</li>
-                <li><strong>AI & Automation Tools:</strong> watsonx Assistant, watsonx Orchestrate, Watson Discovery, Watson Studio, IBM Granite, Slack Bots & Webhooks, RAG Pipelines</li>
-                <li><strong>Machine Learning & MLOps:</strong> Model training, evaluation (precision, recall), automation pipelines, feedback loop integration</li>
-                <li><strong>Messaging & Integration:</strong> Kafka, RabbitMQ, API Connect, RESTful APIs, WebSocket, ONVIF SDK, SecurOS SDK</li>
-                <li><strong>Databases & Storage:</strong> IBM DB2, Cloudant, PostgreSQL, MySQL, Cloud Object Storage (COS)</li>
-                <li><strong>Monitoring & Observability:</strong> IBM Instana, Dynatrace, Splunk, Falcon Logging</li>
-                <li><strong>Automation Platforms:</strong> Ansible Tower, Ansible Automation Platform, ServiceNow (Scoped Apps, Flows, Business Rules)</li>
-                <li><strong>Architecture & Design:</strong> Microservices, Event-Driven Architecture, Domain-Driven Design (DDD), UML</li>
-                <li><strong>Documentation & Training:</strong> Confluence, Technical Writing, Partner/Integrator Training, Certification Exams</li>
+                <li><strong>Languages:</strong> Java, Python, Go, JavaScript, TypeScript, PHP, SQL, C</li>
+                <li><strong>Frontend:</strong> React, Next.js, Chart.js, Carbon Charts</li>
+                <li><strong>Backend:</strong> Spring Boot, Node.js, Express</li>
+                <li><strong>Cloud/DevOps:</strong> Kubernetes, Docker, IBM Cloud, OpenShift, CI/CD, GitHub, Ansible, Maven, Artifactory</li>
+                <li><strong>AI/Automation:</strong> watsonx Assistant, watsonx Orchestrate, Watson Discovery, ServiceNow, Slack Bots, RAG pipelines</li>
+                <li><strong>Databases:</strong> IBM DB2, Cloudant, PostgreSQL, MySQL, COS</li>
+                <li><strong>Observability:</strong> Instana, Dynatrace, Splunk, Falcon</li>
+                <li><strong>Design:</strong> Microservices, Event-Driven, Domain-Driven Design, UML</li>
             </ul>
         </div>
 
+        <div class="section">
+            <h2>🚀 Featured Projects</h2>
             <ul>
-                <li><strong>Languages/Frameworks:</strong> Java (Spring Boot), Python, Go, JavaScript, TypeScript, Node.js, React, Next.js, PHP, C</li>
-                <li><strong>Cloud, DevOps & Messaging:</strong> IBM Cloud, Red Hat OpenShift, Kubernetes, Docker, CI/CD, Git, GitHub, Artifactory, Maven, Ansible, Cloud Object Storage, Kafka, RabbitMQ</li>
-                <li><strong>AI/Automation Tools:</strong> watsonx Assistant, watsonx Orchestrate, Watson Discovery, Watson Studio, IBM Granite, MLOps, ServiceNow (Flows, Scoped Apps), Slack Automation</li>
-                <li><strong>Databases & Observability:</strong> IBM DB2, Cloudant, PostgreSQL, MySQL, Splunk, Dynatrace, IBM Instana</li>
-                <li><strong>Architecture & Design:</strong> Microservices, Event-Driven Architecture, Domain-Driven Design, RESTful APIs, UML</li>
+                <li><strong>AskMEA:</strong> Slack AI assistant using watsonx + RAG, reduced support time 10x</li>
+                <li><strong>AskITOps:</strong> Slack bot automating app retirement workflows via ServiceNow</li>
+                <li><strong>Monitoring Coverage Dashboard:</strong> React + Next.js dashboard replacing Splunk</li>
+                <li><strong>Status-Radar Slack Integration:</strong> Slack subscriptions using Spring Boot + React</li>
+                <li><strong>Falcon Logging Automation:</strong> Python + Ansible for log retention and backups</li>
+                <li><strong>One-Click Cirrus → Instana:</strong> Go-based tool for observability onboarding</li>
+                <li><strong>SecurOS Object Dashboard:</strong> Node.js + React + PostgreSQL integration</li>
+                <li><strong>Thermal/Mask Detection Interface:</strong> Python + NN + camera access protocol</li>
+                <li><strong>Camera API Integration:</strong> ONVIF + SecurOS SDK support</li>
+                <li><strong>Confluence Docs:</strong> Authored company-wide documentation and training</li>
             </ul>
         </div>
 
@@ -132,9 +118,22 @@
 
     <div class="sidebar">
         <h2>🌟 Recommendations</h2>
-        <p><em>"Kamal was a joy to collaborate with—he resolved a persistent Slack integration issue and always brought positive energy."</em><br>— Dixsie Wolmers, IBM</p>
-        <p><em>"Excellent engineer with deep AI assistant and automation experience—dependable and curious."</em><br>— Michael Booz, IBM</p>
-        <p><em>"Simplifies complex problems and communicates clearly—Kamal’s work on AI bots was impactful."</em><br>— Michael Wanderski, Lead Architect</p>
+        <blockquote>
+            “I had the pleasure of working with Kamal on IBM CIO Monitoring and Event Automation team, and he was truly a joy to collaborate with. Always bringing a positive attitude and a genuine eagerness to learn, Kamal was a great partner in troubleshooting and idea-sharing. One standout moment was when he resolved a persistent issue with our Slack integration—his solution was not only effective, but also well-documented and thoughtfully organized to align with our backend. Kamal’s contributions made a real impact, and any team would be lucky to have him!”<br>
+            — Dixsie Wolmers, Software Developer @ IBM
+        </blockquote>
+        <blockquote>
+            “Kamal is an excellent engineer with deep experience in AI assistants, full-stack development, and automation. He’s dependable, curious, and always willing to help others. It was a pleasure working alongside him.”<br>
+            — Michael Booz, Software Engineer @ IBM
+        </blockquote>
+        <blockquote>
+            “Kamal’s communication skills, technical acumen, and ability to simplify complex problems for broad audiences made him invaluable to our team. His work on the AI bots was not only technically sound but also extremely impactful.”<br>
+            — Michael Wanderski, Lead Architect @ IBM
+        </blockquote>
+        <blockquote>
+            “Kamal’s technical expertise in support, design, and development made him an asset to the team. He is reliable, analytical, and consistently delivers with impact.”<br>
+            — Eugene Beytenbrod, Director @ ISS
+        </blockquote>
     </div>
 </div>
 </body>
