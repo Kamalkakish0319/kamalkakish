@@ -55,6 +55,44 @@
             margin-left: 0;
             color: #555;
         }
+        @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .main, .sidebar {
+            flex: 1;
+            width: 100%;
+            padding: 0;
+            border: none;
+        }
+
+        .main {
+            padding-right: 0;
+        }
+
+        .sidebar {
+            padding-left: 0;
+            margin-top: 30px;
+        }
+
+        img.profile {
+            width: 120px;
+            display: block;
+            margin: auto;
+        }
+
+        h1, h2 {
+            font-size: 1.4em;
+            text-align: center;
+        }
+
+        body {
+            padding: 20px;
+        }
+    }
+
     </style>
 </head>
 <body>
@@ -70,7 +108,13 @@
             <h2>About Me</h2>
             <p>I’m a Full-Stack Software Engineer and AI Engineer with deep experience building automation-first systems across cloud infrastructure and enterprise platforms. I specialize in backend development using Java (Spring Boot) and Python, with strong proficiency in frontend technologies like React, Next.js, and Node.js. My work spans intelligent automation, observability engineering, and AI/ML systems integration. At IBM, I led initiatives automating application onboarding, retirement, and support through AI-driven Slack agents, watsonx Orchestrate, and RAG pipelines — reducing response time by 10x and eliminating manual SRE involvement. I also architected monitoring dashboards using React, Cloudant, and COS, and migrated enterprise observability systems from Splunk to IBM-native tooling. At Intelligent Security Systems (ISS), I developed real-time computer vision interfaces and SDK/API integrations for physical security platforms. I engineered thermal/mask detection systems, dashboard visualizations for object analytics, and led architecture, implementation, and partner training across multimillion-dollar deployments. My strengths bridge DevOps, MLOps, and AI Ops, allowing me to deliver scalable, intelligent platforms across domains.</p>
         </div>
-
+        <div class="section">
+            <h2>🧾 Recent Roles</h2>
+            <ul>
+                <li><strong>Software Developer, IBM</strong> – Led development of enterprise automation and AI solutions including Slack-based AI agents (AskMEA, AskITOps), observability dashboards, and platform migration tools using technologies like watsonx, Spring Boot, Python, Cloudant, COS, DB2, and Kubernetes. (2022–2025)</li>
+                <li><strong>AI Solutions Engineer, Intelligent Security Systems (ISS)</strong> – Designed and implemented secure video intelligence platforms, object detection dashboards, SDK/API automations, and computer vision systems using Node.js, React, PostgreSQL, Python, and ONVIF integrations. Led architecture, deployment, and support for multimillion-dollar projects. (2020–2022)</li>
+            </ul>
+        </div>
         <div class="section">
             <h2>📄 Downloadable Documents</h2>
             <ul>
